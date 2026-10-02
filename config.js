@@ -1,3 +1,3 @@
 // ===== JEDINÉ MÍSTO PRO NASTAVENÍ SUPABASE =====
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
+const SUPABASE_URL = 'https://cvawpbqvsfqvsrblqowk.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2YXdwYnF2c2ZxdnNyYmxxb3drIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA5NDE4ODAsImV4cCI6MjEwNjUxNzg4MH0.yHlxuMfosY98QZRGCBTNGXXWBdBPzahcsyYtyoGXWEE'; // pouze veřejný (anon) klíč, nikdy service-role
