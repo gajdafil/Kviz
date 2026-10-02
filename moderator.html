@@ -1,0 +1,10 @@
+<!doctype html><html lang="cs"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Kvízový moderátor</title>
+<link rel="stylesheet" href="styles.css"></head><body>
+<header><b>🎤 Kvízový moderátor</b><span id="hdr"></span></header>
+<div id="banner" hidden>⚠ Připojení k serveru bylo ztraceno.</div>
+<main id="app"></main><div id="toast"></div>
+<nav><button data-t="sort">👥 Rozřazení</button><button data-t="tip">🎯 Tipovačka</button><button data-t="res">🏆 Výsledky</button></nav>
+<dialog id="dlg"><p id="dlgq"></p><button id="dlgy" class="gold"></button><button class="ghost" onclick="dlg.close()">Zrušit</button></dialog>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script><script src="moderator.js"></script></body></html>

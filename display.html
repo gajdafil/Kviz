@@ -1,0 +1,18 @@
+<!doctype html><html lang="cs"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Průběžné pořadí</title>
+<style>
+:root{--blue:#003399;--gold:#ffcc00;--n:1;--rh:min(11vh,calc(70vh / var(--n)))}
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{background:radial-gradient(circle at 50% 0,#0a47c4,#001a5c 70%);color:#fff;font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;display:flex;flex-direction:column;align-items:center}
+h1{font-size:clamp(2rem,6vh,4.5rem);margin:4vh 0 3vh;color:var(--gold);letter-spacing:.04em}
+#board{position:relative;width:min(92vw,1100px);height:calc(var(--rh)*var(--n))}
+.row{position:absolute;left:0;right:0;height:calc(var(--rh) - 10px);top:0;display:flex;align-items:center;gap:2vw;padding:0 2vw;background:#ffffff1c;border-radius:16px;font-size:calc(var(--rh)*.45);transition:top .7s ease}
+.row .k{width:2ch;font-weight:800;color:var(--gold);text-align:center}.row .t{flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.row .p{font-weight:800;background:var(--gold);color:var(--blue);padding:0 1.2ch;border-radius:10px;min-width:3.5ch;text-align:center}
+.row.top{background:#ffcc0033;border:2px solid var(--gold)}
+#empty{font-size:2rem;opacity:.7;margin-top:20vh}
+@media(prefers-reduced-motion:reduce){.row{transition:none}}
+</style></head><body>
+<h1 id="title">🏆 PRŮBĚŽNÉ POŘADÍ</h1><div id="board"></div><div id="empty" hidden>Čekáme na začátek kvízu…</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script><script src="display.js"></script></body></html>
